@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Burst</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <!-- Tailwind and Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c131920645.js" crossorigin="anonymous"></script>
+    <style>
+        .lato {
+            font-family: 'Lato', sans-serif;
+        }
+
+        .test {
+            border: 3px solid rgb(18, 181, 56);
+            height: 5px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body class="lato">
+    <!-- Header -->
+    <header class="mx-4 md:mx-8 border-0 border-orange-300">
+        <nav class="w-full md:max-w-screen-xl md:mx-auto my-8 md:my-12">
+            <div
+                class="navbar md:bg-[#F85559] rounded-full px-0 md:px-6 lg:px-8 flex-row-reverse lg:flex-row justify-between">
+                <div class="navbar-start text-[#121212] md:text-white justify-end lg:justify-start">
+                    <div class="md:hidden dropdown">
+                        <label tabindex="0" class="btn btn-ghost btn-circle w-auto md:w-12">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h7" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content z-[1] p-2 shadow-md border-[1px] border-[#423e3e1a] bg-base-100 rounded-box w-44 text-lg text-[#121212] absolute top-12 -left-40">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">All Fruits</a></li>
+                        </ul>
+                    </div>
+                    <!-- Ul For Large -->
+                    <ul tabindex="0" class="hidden md:flex space-x-6  text-lg font-normal ">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">All Fruits</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-center text-[#121212] md:text-white">
+                    <a href="#" class="btn btn-ghost normal-case text-3xl md:text-4xl font-bold pl-0 md:pl-4">
+                        <img class="h-8 md:h-9" height="" src="images/logo.png" alt=""> Fruit Burst </a>
+                </div>
+                <div class="navbar-end px-0 hidden lg:flex text-[#121212]">
+                    <div class="relative">
+                        <input type="text" placeholder="Search here" class="pl-4 pr-9 h-9 rounded-full  outline-none">
+                        <div id="searchIcon" class="absolute right-3 top-[6px] "><i
+                                class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <!-- <div class="test">Kemon acho, bvalo acho eta thik moto dekha jay? </div> -->
+        </section>
+    </main>
+    <footer>
+    </footer>
+</body>
+
+</html>
