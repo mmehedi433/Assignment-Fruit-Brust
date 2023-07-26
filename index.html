@@ -13,12 +13,29 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <!-- Font Awesome -->
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c131920645.js" crossorigin="anonymous"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    backgroundImage: {
+                        'banner1': "url('images/banner1.png')",
+                        'banner2': "url('images/banner2.png')",
+                        'banner3': "url('images/banner3.png')",
+                        'banner4': "url('images/banner4.png')",
+                        'banner00': "linear-gradient(to bottom, #000000bd 0%, #0000001c 100%, url('url(images/banner1.png)')",
+
+                    },
+                },
+            },
+        }
+    </script>
     <style>
-        .lato {
-            font-family: 'Lato', sans-serif;
+        .openSans {
+            font-family: 'Open Sans', sans-serif;
         }
 
         .test {
@@ -27,19 +44,28 @@
             margin-top: 20px;
         }
 
-        #drpdownMenu {
-            /* visibility: visible; */
-            /* opacity: 1; */
+        #hero-overlay-test_2 {
+            border-radius: 8px;
+            /* background: url(images/banner1.png), linear-gradient(to bottom, #000000bd 0%, #0000001c 100%); */
+            /* background: linear-gradient(to bottom, #000000bd 0%, rgba(0, 0, 0, 0) 100%); */
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-blend-mode: overlay;
+        }
+
+        .hidden_image {
+            /* width: 100%; */
+            /* height: auto; */
         }
     </style>
 </head>
 
-<body class="lato">
+<body class="openSans">
     <!-- Header -->
     <header class="mx-4 md:mx-8 border-0 border-orange-300">
         <nav class="w-full md:max-w-screen-xl md:mx-auto my-8 md:my-12">
             <div
-                class="navbar md:bg-[#F85559] rounded-full px-0 md:px-6 lg:px-8 flex-row-reverse lg:flex-row justify-between">
+                class="navbar md:bg-[#F85559] rounded-full px-0 md:px-5 lg:px-6 flex-row-reverse lg:flex-row justify-between">
                 <div class="navbar-start text-[#121212] md:text-white justify-end lg:justify-start">
                     <div class="md:hidden dropdown">
                         <label tabindex="0" class="btn btn-ghost btn-circle w-auto md:w-12">
@@ -49,8 +75,8 @@
                                     d="M4 6h16M4 12h16M4 18h7" />
                             </svg>
                         </label>
-                        <ul tabindex="0" id="drpdownMenu"
-                            class="menu menu-sm dropdown-content z-[1] p-2 shadow-md border-[1px] border-[#423e3e1a] bg-base-100 rounded-box w-56 text-lg text-[#121212] absolute top-12 -left-[210px]">
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content z-30 p-2 shadow-md border-[1px] border-[#423e3e1a] bg-base-100 rounded-box w-56 text-lg text-[#121212] absolute top-12 -left-[210px]">
                             <li><a href="#">Home</a></li>
                             <li><a href="#">About Us</a></li>
                             <li><a href="#">Shop</a></li>
@@ -69,15 +95,15 @@
                         </ul>
                     </div>
                     <!-- Ul For Large -->
-                    <ul tabindex="0" class="hidden md:flex space-x-6  text-lg font-normal">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Shop</a></li>
-                        <li><a href="#">All Fruits</a></li>
+                    <ul tabindex="0" class="hidden md:flex space-x-6  text-lg border-white">
+                        <li><a class="hover:border-b-[1px]" href="#">Home</a></li>
+                        <li><a class="hover:border-b-[1px]" href="#">About Us</a></li>
+                        <li><a class="hover:border-b-[1px]" href="#">Shop</a></li>
+                        <li><a class="hover:border-b-[1px]" href="#">All Fruits</a></li>
                     </ul>
                 </div>
                 <div class="navbar-center text-[#121212] md:text-white">
-                    <a href="#" class="btn btn-ghost normal-case text-3xl md:text-4xl font-bold pl-0 md:pl-4">
+                    <a href="#" class="btn btn-ghost normal-case text-3xl md:text-4xl font-bold px-0">
                         <img class="h-8 md:h-9" height="" src="images/logo.png" alt=""> Fruit Burst </a>
                 </div>
                 <div class="navbar-end px-0 hidden lg:flex text-[#121212]">
@@ -90,10 +116,185 @@
                 </div>
             </div>
         </nav>
+        <div class="banner w-full md:max-w-screen-xl md:mx-auto my-8 md:my-12">
+            <div class="carousel w-full">
+                <!-- <div class="rounded-lg bg-gradient-to-b from-[#000000bd] to-[#00000000] bg-banner1 bg-cover bg-blend-overlay bg-no-repeat"></div> -->
+                <!-- First Slide -->
+                <div id="slide1" class="carousel-item relative w-full">
+                    <!-- <div></div> -->
+                    <div class="hero place-items-baseline justify-items-center items-start rounded-lg bg-cover bg-blend-overlay bg-no-repeat"
+                        style="background-image: url('images/banner1.png'), linear-gradient(to bottom, #000000bd 0%, rgba(0, 0, 0, 0) 100%);">
+                        <!-- <div class="hero-overlay bg-opacity-60"></div> -->
+                        <div class="hero-content text-center text-neutral-content z-20 pt-6 lg:pt-14">
+                            <div class="mx-4 max-w-md">
+                                <h1 class="mb-3 lg:mb-5 text-2xl md:text-4xl lg:text-5xl font-bold text-white">Flavors
+                                    of Nature <br> Right to You </h1>
+                                <p class="mb-3 lg:mb-5 text-gray-100 md:text-gray-200font-medium text-sm md:text-base">
+                                    Top-Notch Organic Products Supplied Here</p>
+                                <button
+                                    class="btn btn-primary text-white bg-[#F85559] border-[#F85559] hover:bg-[#ff3b3f] hover:border-[#ff3b3f] font-bold px-5">Shop
+                                    Now</button>
+                            </div>
+                        </div>
+                        <!-- Hidden image, used to keep perfect height-width of background image -->
+                        <div class="hidden_image opacity-0 z-10">
+                            <img src="images/banner_transparent.png" class="w-full " />
+                        </div>
+                    </div>
+                    <div
+                        class="absolute flex justify-between transform -translate-y-1/2 left-1 md:left-5 right-1 md:right-5 top-1/2 z-40 ">
+                        <a href="#slide4"
+                            class="btn btn-circle bg-gray-900 text-gray-100 border-gray-900 text-xl h-8 w-8 min-h-8 md:h-12 md:w-12">❮</a>
+                        <a href="#slide2"
+                            class="btn btn-circle bg-gray-900 text-gray-100 border-gray-900 text-xl h-8 w-8 min-h-8 md:h-12 md:w-12">❯</a>
+                        <!-- ackground: black; border-color: black; color: #dadada; font-size: 1.2rem; } -->
+                    </div>
+                </div>
+                <!-- Second Slide -->
+                <div id="slide2" class="carousel-item relative w-full">
+                    <!-- <div></div> -->
+                    <div class="hero place-items-baseline justify-items-center items-start rounded-lg bg-cover bg-blend-overlay bg-no-repeat"
+                        style="background-image: url('images/banner2.png'), linear-gradient(to bottom, #000000bd 0%, rgba(0, 0, 0, 0) 100%);">
+                        <!-- <div class="hero-overlay bg-opacity-60"></div> -->
+                        <div class="hero-content text-center text-neutral-content z-20 pt-6 lg:pt-14">
+                            <div class="mx-4 max-w-md">
+                                <h1 class="mb-3 lg:mb-5 text-2xl md:text-4xl lg:text-5xl font-bold text-white">Tropical
+                                    Bliss <br> Freshly Delivered</h1>
+                                <p class="mb-3 lg:mb-5 text-gray-100 md:text-gray-200font-medium text-sm md:text-base">
+                                    Premium Quality Organic Items Available</p>
+                                <button
+                                    class="btn btn-primary text-white bg-[#F85559] border-[#F85559] hover:bg-[#ff3b3f] hover:border-[#ff3b3f] font-bold px-5">Shop
+                                    Now</button>
+                            </div>
+                        </div>
+                        <!-- Hidden image, used to keep perfect height-width of background image -->
+                        <div class="hidden_image opacity-0 z-10">
+                            <img src="images/banner_transparent.png" class="w-full " />
+                        </div>
+                    </div>
+                    <div
+                        class="absolute flex justify-between transform -translate-y-1/2 left-1 md:left-5 right-1 md:right-5 top-1/2 z-40 ">
+                        <a href="#slide1"
+                            class="btn btn-circle bg-gray-900 text-gray-100 border-gray-900 text-xl h-8 w-8 min-h-8 md:h-12 md:w-12">❮</a>
+                        <a href="#slide3"
+                            class="btn btn-circle bg-gray-900 text-gray-100 border-gray-900 text-xl h-8 w-8 min-h-8 md:h-12 md:w-12">❯</a>
+                        <!-- ackground: black; border-color: black; color: #dadada; font-size: 1.2rem; } -->
+                    </div>
+                </div>
+                <!-- Third Slide -->
+                <div id="slide3" class="carousel-item relative w-full">
+                    <!-- <div></div> -->
+                    <div class="hero place-items-baseline justify-items-center items-start rounded-lg bg-cover bg-blend-overlay bg-no-repeat"
+                        style="background-image: url('images/banner3.png'), linear-gradient(to bottom, #000000bd 0%, rgba(0, 0, 0, 0) 100%);">
+                        <!-- <div class="hero-overlay bg-opacity-60"></div> -->
+                        <div class="hero-content text-center text-neutral-content z-20 pt-6 lg:pt-14">
+                            <div class="mx-4 max-w-md">
+                                <h1 class="mb-3 lg:mb-5 text-2xl md:text-4xl lg:text-5xl font-bold text-white">Exotic
+                                    Fruits <br> Delivered Fast</h1>
+                                <p class="mb-3 lg:mb-5 text-gray-100 md:text-gray-200font-medium text-sm md:text-base">
+                                    Providing High-Quality Organic Goods</p>
+                                <button
+                                    class="btn btn-primary text-white bg-[#F85559] border-[#F85559] hover:bg-[#ff3b3f] hover:border-[#ff3b3f] font-bold px-5">Shop
+                                    Now</button>
+                            </div>
+                        </div>
+                        <!-- Hidden image, used to keep perfect height-width of background image -->
+                        <div class="hidden_image opacity-0 z-10">
+                            <img src="images/banner_transparent.png" class="w-full " />
+                        </div>
+                    </div>
+                    <div
+                        class="absolute flex justify-between transform -translate-y-1/2 left-1 md:left-5 right-1 md:right-5 top-1/2 z-40 ">
+                        <a href="#slide2"
+                            class="btn btn-circle bg-gray-900 text-gray-100 border-gray-900 text-xl h-8 w-8 min-h-8 md:h-12 md:w-12">❮</a>
+                        <a href="#slide4"
+                            class="btn btn-circle bg-gray-900 text-gray-100 border-gray-900 text-xl h-8 w-8 min-h-8 md:h-12 md:w-12">❯</a>
+                        <!-- ackground: black; border-color: black; color: #dadada; font-size: 1.2rem; } -->
+                    </div>
+                </div>
+                <!-- Fourth Slide -->
+                <div id="slide4" class="carousel-item relative w-full">
+                    <!-- <div></div> -->
+                    <div class="hero place-items-baseline justify-items-center items-start rounded-lg bg-cover bg-blend-overlay bg-no-repeat"
+                        style="background-image: url('images/banner4.png'), linear-gradient(to bottom, #000000bd 0%, rgba(0, 0, 0, 0) 100%);">
+                        <!-- <div class="hero-overlay bg-opacity-60"></div> -->
+                        <div class="hero-content text-center text-neutral-content z-20 pt-6 lg:pt-14">
+                            <div class="mx-4 max-w-md">
+                                <h1 class="mb-3 lg:mb-5 text-2xl md:text-4xl lg:text-5xl font-bold text-white">Taste
+                                    Paradise <br> Home Delivered</h1>
+                                <p class="mb-3 lg:mb-5 text-gray-100 md:text-gray-200font-medium text-sm md:text-base">
+                                    Explore Our Selection of Organic Excellence</p>
+                                <button
+                                    class="btn btn-primary text-white bg-[#F85559] border-[#F85559] hover:bg-[#ff3b3f] hover:border-[#ff3b3f] font-bold px-5">Shop
+                                    Now</button>
+                            </div>
+                        </div>
+                        <!-- Hidden image, used to keep perfect height-width of background image -->
+                        <div class="hidden_image opacity-0 z-10">
+                            <img src="images/banner_transparent.png" class="w-full " />
+                        </div>
+                    </div>
+                    <div
+                        class="absolute flex justify-between transform -translate-y-1/2 left-1 md:left-5 right-1 md:right-5 top-1/2 z-40 ">
+                        <a href="#slide3"
+                            class="btn btn-circle bg-gray-900 text-gray-100 border-gray-900 text-xl h-8 w-8 min-h-8 md:h-12 md:w-12">❮</a>
+                        <a href="#slide1"
+                            class="btn btn-circle bg-gray-900 text-gray-100 border-gray-900 text-xl h-8 w-8 min-h-8 md:h-12 md:w-12">❯</a>
+                        <!-- ackground: black; border-color: black; color: #dadada; font-size: 1.2rem; } -->
+                    </div>
+                </div>
+            </div>
+            <!-- Fruit List on Carousel -->
+            <div class="relative hidden md:block">
+                <div
+                    class="flex w-[90%] lg:w-4/5 mx-auto justify-center gap-4 lg:gap-10 px-4 py-5 lg:px-12 lg:py-7 text-center font-medium text-[#121212cc] absolute left-[5%] lg:left-[10%] -top-[70px] lg:-top-[100px] bg-white shadow-md rounded-lg items-end">
+                    <!--width: 90%;     padding: 20px 18px; gap: 18px; top: -70px;  left: 5%; -->
+                    <!-- <div class="grid grid-cols-[0.9fr] justify-center"> -->
+                    <div>
+                        <img src="images/fruit1.png" alt="Grape">
+                        <p>Grape</p>
+                    </div>
+                    <!-- <div class="grid grid-cols-[0.9fr] justify-center"> -->
+                    <div>
+                        <img src="images/fruit2.png" alt="Orange">
+                        <p>Orange</p>
+                    </div>
+                    <!-- <div class="grid grid-cols-[0.9fr] justify-center"> -->
+                    <div>
+                        <img src="images/fruit3.png" alt="Mango">
+                        <p>Mango</p>
+                    </div>
+                    <!-- <div class="grid grid-cols-[0.9fr] justify-center"> -->
+                    <div>
+                        <img src="images/fruit4.png" alt="Strawberry">
+                        <p>Strawberry</p>
+                    </div>
+                    <!-- <div class="grid grid-cols-[0.9fr] justify-center"> -->
+                    <div>
+                        <img src="images/fruit5.png" alt="Pomegranate">
+                        <p>Pomegranate</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
     <main>
-        <section>
+        <section class="mx-4 my-4 md:mx-8 border-0 border-orange-300">
+            <div class="w-full md:max-w-screen-xl md:mx-auto my-8 md:my-12"> hi </div>
             <!-- <div class="test">Kemon acho, bvalo acho eta thik moto dekha jay? </div> -->
+            <!-- 
+
+Flavors of Nature <br> Right to You
+Tropical Bliss <br> Freshly Delivered
+Exotic Fruits <br> Delivered Fast
+Taste Paradise <br> Home Delivered
+
+
+Top-Notch Organic Products Supplied Here
+Premium Quality Organic Items Available
+Providing High-Quality Organic Goods
+Explore Our Selection of Organic Excellence
+ -->
         </section>
     </main>
     <footer>
