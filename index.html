@@ -26,6 +26,11 @@
             height: 5px;
             margin-top: 20px;
         }
+
+        #drpdownMenu {
+            /* visibility: visible; */
+            /* opacity: 1; */
+        }
     </style>
 </head>
 
@@ -44,16 +49,27 @@
                                     d="M4 6h16M4 12h16M4 18h7" />
                             </svg>
                         </label>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content z-[1] p-2 shadow-md border-[1px] border-[#423e3e1a] bg-base-100 rounded-box w-44 text-lg text-[#121212] absolute top-12 -left-40">
+                        <ul tabindex="0" id="drpdownMenu"
+                            class="menu menu-sm dropdown-content z-[1] p-2 shadow-md border-[1px] border-[#423e3e1a] bg-base-100 rounded-box w-56 text-lg text-[#121212] absolute top-12 -left-[210px]">
                             <li><a href="#">Home</a></li>
                             <li><a href="#">About Us</a></li>
                             <li><a href="#">Shop</a></li>
                             <li><a href="#">All Fruits</a></li>
+                            <li>
+                                <div class="px-0 text-[#121212]">
+                                    <div class="relative">
+                                        <input type="text" placeholder="Search here"
+                                            class="pl-4 pr-9 h-9 rounded-full  outline-none border-2 border-[#423e3e1a]">
+                                        <div id="searchIcon" class="absolute right-3 top-[6px] "><i
+                                                class="fa-solid fa-magnifying-glass"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                     <!-- Ul For Large -->
-                    <ul tabindex="0" class="hidden md:flex space-x-6  text-lg font-normal ">
+                    <ul tabindex="0" class="hidden md:flex space-x-6  text-lg font-normal">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About Us</a></li>
                         <li><a href="#">Shop</a></li>
