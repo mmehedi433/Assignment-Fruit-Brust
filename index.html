@@ -2,19 +2,19 @@
 <html lang="en" data-theme="light">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fruit Burst</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
     <!-- Tailwind and Daisy UI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/c131920645.js" crossorigin="anonymous"></script>
     <script>
@@ -22,20 +22,20 @@
             theme: {
                 extend: {
                     backgroundImage: {
-                        'banner1': "url('images/banner1.png')",
-                        'banner2': "url('images/banner2.png')",
-                        'banner3': "url('images/banner3.png')",
-                        'banner4': "url('images/banner4.png')",
-                        'banner00': "linear-gradient(to bottom, #000000bd 0%, #0000001c 100%, url('url(images/banner1.png)')",
-
+                        banner1: "url('images/banner1.png')",
+                        banner2: "url('images/banner2.png')",
+                        banner3: "url('images/banner3.png')",
+                        banner4: "url('images/banner4.png')",
+                        banner00:
+                            "linear-gradient(to bottom, #000000bd 0%, #0000001c 100%, url('url(images/banner1.png)')",
                     },
                 },
             },
-        }
+        };
     </script>
     <style>
         .openSans {
-            font-family: 'Open Sans', sans-serif;
+            font-family: "Open Sans", sans-serif;
         }
 
         .test {
@@ -85,9 +85,9 @@
                                 <div class="px-0 text-[#121212]">
                                     <div class="relative">
                                         <input type="text" placeholder="Search here"
-                                            class="pl-4 pr-9 h-9 rounded-full  outline-none border-2 border-[#423e3e1a]">
-                                        <div id="searchIcon" class="absolute right-3 top-[6px] "><i
-                                                class="fa-solid fa-magnifying-glass"></i>
+                                            class="pl-4 pr-9 h-9 rounded-full outline-none border-2 border-[#423e3e1a]" />
+                                        <div id="searchIcon" class="absolute right-3 top-[6px]">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -95,22 +95,30 @@
                         </ul>
                     </div>
                     <!-- Ul For Large -->
-                    <ul tabindex="0" class="hidden md:flex space-x-6  text-lg border-white">
-                        <li><a class="hover:border-b-[1px]" href="#">Home</a></li>
-                        <li><a class="hover:border-b-[1px]" href="#">About Us</a></li>
-                        <li><a class="hover:border-b-[1px]" href="#">Shop</a></li>
-                        <li><a class="hover:border-b-[1px]" href="#">All Fruits</a></li>
+                    <ul tabindex="0" class="hidden md:flex space-x-6 text-lg border-white">
+                        <li>
+                            <a class="hover:border-b-[1px]" href="#">Home</a>
+                        </li>
+                        <li>
+                            <a class="hover:border-b-[1px]" href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a class="hover:border-b-[1px]" href="#">Shop</a>
+                        </li>
+                        <li>
+                            <a class="hover:border-b-[1px]" href="#">All Fruits</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="navbar-center text-[#121212] md:text-white">
                     <a href="#" class="btn btn-ghost normal-case text-3xl md:text-4xl font-bold px-0">
-                        <img class="h-8 md:h-9" height="" src="images/logo.png" alt=""> Fruit Burst </a>
+                        <img class="h-8 md:h-9" height="" src="images/logo.png" alt="" /> Fruit Burst </a>
                 </div>
                 <div class="navbar-end px-0 hidden lg:flex text-[#121212]">
                     <div class="relative">
-                        <input type="text" placeholder="Search here" class="pl-4 pr-9 h-9 rounded-full  outline-none">
-                        <div id="searchIcon" class="absolute right-3 top-[6px] "><i
-                                class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search here" class="pl-4 pr-9 h-9 rounded-full outline-none" />
+                        <div id="searchIcon" class="absolute right-3 top-[6px]">
+                            <i class="fa-solid fa-magnifying-glass"></i>
                         </div>
                     </div>
                 </div>
@@ -123,30 +131,37 @@
                 <div id="slide1" class="carousel-item relative w-full">
                     <!-- <div></div> -->
                     <div class="hero place-items-baseline justify-items-center items-start rounded-lg bg-cover bg-blend-overlay bg-no-repeat"
-                        style="background-image: url('images/banner1.png'), linear-gradient(to bottom, #000000bd 0%, rgba(0, 0, 0, 0) 100%);">
+                        style="
+                                background-image: url('images/banner1.png'),
+                                    linear-gradient(
+                                        to bottom,
+                                        #000000bd 0%,
+                                        rgba(0, 0, 0, 0) 100%
+                                    );
+                            ">
                         <!-- <div class="hero-overlay bg-opacity-60"></div> -->
                         <div class="hero-content text-center text-neutral-content z-20 pt-6 lg:pt-14">
                             <div class="mx-4 max-w-md">
-                                <h1 class="mb-3 lg:mb-5 text-2xl md:text-4xl lg:text-5xl font-bold text-white">Flavors
-                                    of Nature <br> Right to You </h1>
+                                <h1 class="mb-3 lg:mb-5 text-2xl md:text-4xl lg:text-5xl font-bold text-white"> Flavors
+                                    of Nature <br /> Right to You </h1>
                                 <p class="mb-3 lg:mb-5 text-gray-100 md:text-gray-200font-medium text-sm md:text-base">
-                                    Top-Notch Organic Products Supplied Here</p>
+                                    Top-Notch Organic Products Supplied Here </p>
                                 <button
-                                    class="btn btn-primary text-white bg-[#F85559] border-[#F85559] hover:bg-[#ff3b3f] hover:border-[#ff3b3f] font-bold px-5">Shop
-                                    Now</button>
+                                    class="btn btn-primary text-white bg-[#F85559] border-[#F85559] hover:text-[#F85559] hover:bg-white hover:border-[#F85559] font-bold px-5 z-[500]">
+                                    Shop Now </button>
                             </div>
                         </div>
                         <!-- Hidden image, used to keep perfect height-width of background image -->
-                        <div class="hidden_image opacity-0 z-10">
-                            <img src="images/banner_transparent.png" class="w-full " />
+                        <div class="hidden_image opacity-0 invisible z-10">
+                            <img src="images/banner_transparent.png" class="w-full" />
                         </div>
                     </div>
                     <div
-                        class="absolute flex justify-between transform -translate-y-1/2 left-1 md:left-5 right-1 md:right-5 top-1/2 z-40 ">
+                        class="absolute flex justify-between transform -translate-y-1/2 left-1 md:left-5 right-1 md:right-5 top-1/2 z-40">
                         <a href="#slide4"
-                            class="btn btn-circle bg-gray-900 text-gray-100 border-gray-900 text-xl h-8 w-8 min-h-8 md:h-12 md:w-12">❮</a>
+                            class="btn btn-circle bg-gray-900 hover:bg-gray-900 text-gray-100 border-gray-900 hover:border-gray-400 text-xl h-8 w-8 min-h-8 md:h-12 md:w-12">❮</a>
                         <a href="#slide2"
-                            class="btn btn-circle bg-gray-900 text-gray-100 border-gray-900 text-xl h-8 w-8 min-h-8 md:h-12 md:w-12">❯</a>
+                            class="btn btn-circle bg-gray-900 hover:bg-gray-900 text-gray-100 border-gray-900 hover:border-gray-400 text-xl h-8 w-8 min-h-8 md:h-12 md:w-12">❯</a>
                         <!-- ackground: black; border-color: black; color: #dadada; font-size: 1.2rem; } -->
                     </div>
                 </div>
@@ -154,30 +169,37 @@
                 <div id="slide2" class="carousel-item relative w-full">
                     <!-- <div></div> -->
                     <div class="hero place-items-baseline justify-items-center items-start rounded-lg bg-cover bg-blend-overlay bg-no-repeat"
-                        style="background-image: url('images/banner2.png'), linear-gradient(to bottom, #000000bd 0%, rgba(0, 0, 0, 0) 100%);">
+                        style="
+                                background-image: url('images/banner2.png'),
+                                    linear-gradient(
+                                        to bottom,
+                                        #000000bd 0%,
+                                        rgba(0, 0, 0, 0) 100%
+                                    );
+                            ">
                         <!-- <div class="hero-overlay bg-opacity-60"></div> -->
                         <div class="hero-content text-center text-neutral-content z-20 pt-6 lg:pt-14">
                             <div class="mx-4 max-w-md">
-                                <h1 class="mb-3 lg:mb-5 text-2xl md:text-4xl lg:text-5xl font-bold text-white">Tropical
-                                    Bliss <br> Freshly Delivered</h1>
+                                <h1 class="mb-3 lg:mb-5 text-2xl md:text-4xl lg:text-5xl font-bold text-white"> Tropical
+                                    Bliss <br /> Freshly Delivered </h1>
                                 <p class="mb-3 lg:mb-5 text-gray-100 md:text-gray-200font-medium text-sm md:text-base">
-                                    Premium Quality Organic Items Available</p>
+                                    Premium Quality Organic Items Available </p>
                                 <button
-                                    class="btn btn-primary text-white bg-[#F85559] border-[#F85559] hover:bg-[#ff3b3f] hover:border-[#ff3b3f] font-bold px-5">Shop
-                                    Now</button>
+                                    class="btn btn-primary text-white bg-[#F85559] border-[#F85559] hover:text-[#F85559] hover:bg-white hover:border-[#F85559] font-bold px-5">
+                                    Shop Now </button>
                             </div>
                         </div>
                         <!-- Hidden image, used to keep perfect height-width of background image -->
-                        <div class="hidden_image opacity-0 z-10">
-                            <img src="images/banner_transparent.png" class="w-full " />
+                        <div class="hidden_image invisible opacity-0 z-10">
+                            <img src="images/banner_transparent.png" class="w-full" />
                         </div>
                     </div>
                     <div
-                        class="absolute flex justify-between transform -translate-y-1/2 left-1 md:left-5 right-1 md:right-5 top-1/2 z-40 ">
+                        class="absolute flex justify-between transform -translate-y-1/2 left-1 md:left-5 right-1 md:right-5 top-1/2 z-40">
                         <a href="#slide1"
-                            class="btn btn-circle bg-gray-900 text-gray-100 border-gray-900 text-xl h-8 w-8 min-h-8 md:h-12 md:w-12">❮</a>
+                            class="btn btn-circle bg-gray-900 hover:bg-gray-900 text-gray-100 border-gray-900 hover:border-gray-400 text-xl h-8 w-8 min-h-8 md:h-12 md:w-12">❮</a>
                         <a href="#slide3"
-                            class="btn btn-circle bg-gray-900 text-gray-100 border-gray-900 text-xl h-8 w-8 min-h-8 md:h-12 md:w-12">❯</a>
+                            class="btn btn-circle bg-gray-900 hover:bg-gray-900 text-gray-100 border-gray-900 hover:border-gray-400 text-xl h-8 w-8 min-h-8 md:h-12 md:w-12">❯</a>
                         <!-- ackground: black; border-color: black; color: #dadada; font-size: 1.2rem; } -->
                     </div>
                 </div>
@@ -185,30 +207,37 @@
                 <div id="slide3" class="carousel-item relative w-full">
                     <!-- <div></div> -->
                     <div class="hero place-items-baseline justify-items-center items-start rounded-lg bg-cover bg-blend-overlay bg-no-repeat"
-                        style="background-image: url('images/banner3.png'), linear-gradient(to bottom, #000000bd 0%, rgba(0, 0, 0, 0) 100%);">
+                        style="
+                                background-image: url('images/banner3.png'),
+                                    linear-gradient(
+                                        to bottom,
+                                        #000000bd 0%,
+                                        rgba(0, 0, 0, 0) 100%
+                                    );
+                            ">
                         <!-- <div class="hero-overlay bg-opacity-60"></div> -->
                         <div class="hero-content text-center text-neutral-content z-20 pt-6 lg:pt-14">
                             <div class="mx-4 max-w-md">
-                                <h1 class="mb-3 lg:mb-5 text-2xl md:text-4xl lg:text-5xl font-bold text-white">Exotic
-                                    Fruits <br> Delivered Fast</h1>
+                                <h1 class="mb-3 lg:mb-5 text-2xl md:text-4xl lg:text-5xl font-bold text-white"> Exotic
+                                    Fruits <br /> Delivered Fast </h1>
                                 <p class="mb-3 lg:mb-5 text-gray-100 md:text-gray-200font-medium text-sm md:text-base">
-                                    Providing High-Quality Organic Goods</p>
+                                    Providing High-Quality Organic Goods </p>
                                 <button
-                                    class="btn btn-primary text-white bg-[#F85559] border-[#F85559] hover:bg-[#ff3b3f] hover:border-[#ff3b3f] font-bold px-5">Shop
-                                    Now</button>
+                                    class="btn btn-primary text-white bg-[#F85559] border-[#F85559] hover:text-[#F85559] hover:bg-white hover:border-[#F85559] font-bold px-5">
+                                    Shop Now </button>
                             </div>
                         </div>
                         <!-- Hidden image, used to keep perfect height-width of background image -->
-                        <div class="hidden_image opacity-0 z-10">
-                            <img src="images/banner_transparent.png" class="w-full " />
+                        <div class="hidden_image invisible opacity-0 z-10">
+                            <img src="images/banner_transparent.png" class="w-full" />
                         </div>
                     </div>
                     <div
-                        class="absolute flex justify-between transform -translate-y-1/2 left-1 md:left-5 right-1 md:right-5 top-1/2 z-40 ">
+                        class="absolute flex justify-between transform -translate-y-1/2 left-1 md:left-5 right-1 md:right-5 top-1/2 z-40">
                         <a href="#slide2"
-                            class="btn btn-circle bg-gray-900 text-gray-100 border-gray-900 text-xl h-8 w-8 min-h-8 md:h-12 md:w-12">❮</a>
+                            class="btn btn-circle bg-gray-900 hover:bg-gray-900 text-gray-100 border-gray-900 hover:border-gray-400 text-xl h-8 w-8 min-h-8 md:h-12 md:w-12">❮</a>
                         <a href="#slide4"
-                            class="btn btn-circle bg-gray-900 text-gray-100 border-gray-900 text-xl h-8 w-8 min-h-8 md:h-12 md:w-12">❯</a>
+                            class="btn btn-circle bg-gray-900 hover:bg-gray-900 text-gray-100 border-gray-900 hover:border-gray-400 text-xl h-8 w-8 min-h-8 md:h-12 md:w-12">❯</a>
                         <!-- ackground: black; border-color: black; color: #dadada; font-size: 1.2rem; } -->
                     </div>
                 </div>
@@ -216,30 +245,37 @@
                 <div id="slide4" class="carousel-item relative w-full">
                     <!-- <div></div> -->
                     <div class="hero place-items-baseline justify-items-center items-start rounded-lg bg-cover bg-blend-overlay bg-no-repeat"
-                        style="background-image: url('images/banner4.png'), linear-gradient(to bottom, #000000bd 0%, rgba(0, 0, 0, 0) 100%);">
+                        style="
+                                background-image: url('images/banner4.png'),
+                                    linear-gradient(
+                                        to bottom,
+                                        #000000bd 0%,
+                                        rgba(0, 0, 0, 0) 100%
+                                    );
+                            ">
                         <!-- <div class="hero-overlay bg-opacity-60"></div> -->
                         <div class="hero-content text-center text-neutral-content z-20 pt-6 lg:pt-14">
                             <div class="mx-4 max-w-md">
-                                <h1 class="mb-3 lg:mb-5 text-2xl md:text-4xl lg:text-5xl font-bold text-white">Taste
-                                    Paradise <br> Home Delivered</h1>
+                                <h1 class="mb-3 lg:mb-5 text-2xl md:text-4xl lg:text-5xl font-bold text-white"> Taste
+                                    Paradise <br /> Home Delivered </h1>
                                 <p class="mb-3 lg:mb-5 text-gray-100 md:text-gray-200font-medium text-sm md:text-base">
-                                    Explore Our Selection of Organic Excellence</p>
+                                    Explore Our Selection of Organic Excellence </p>
                                 <button
-                                    class="btn btn-primary text-white bg-[#F85559] border-[#F85559] hover:bg-[#ff3b3f] hover:border-[#ff3b3f] font-bold px-5">Shop
-                                    Now</button>
+                                    class="btn btn-primary text-white bg-[#F85559] border-[#F85559] hover:text-[#F85559] hover:bg-white hover:border-[#F85559] font-bold px-5">
+                                    Shop Now </button>
                             </div>
                         </div>
                         <!-- Hidden image, used to keep perfect height-width of background image -->
-                        <div class="hidden_image opacity-0 z-10">
-                            <img src="images/banner_transparent.png" class="w-full " />
+                        <div class="hidden_image invisible opacity-0 z-10">
+                            <img src="images/banner_transparent.png" class="w-full" />
                         </div>
                     </div>
                     <div
-                        class="absolute flex justify-between transform -translate-y-1/2 left-1 md:left-5 right-1 md:right-5 top-1/2 z-40 ">
+                        class="absolute flex justify-between transform -translate-y-1/2 left-1 md:left-5 right-1 md:right-5 top-1/2 z-40">
                         <a href="#slide3"
-                            class="btn btn-circle bg-gray-900 text-gray-100 border-gray-900 text-xl h-8 w-8 min-h-8 md:h-12 md:w-12">❮</a>
+                            class="btn btn-circle bg-gray-900 hover:bg-gray-900 text-gray-100 border-gray-900 hover:border-gray-400 text-xl h-8 w-8 min-h-8 md:h-12 md:w-12">❮</a>
                         <a href="#slide1"
-                            class="btn btn-circle bg-gray-900 text-gray-100 border-gray-900 text-xl h-8 w-8 min-h-8 md:h-12 md:w-12">❯</a>
+                            class="btn btn-circle bg-gray-900 hover:bg-gray-900 text-gray-100 border-gray-900 hover:border-gray-400 text-xl h-8 w-8 min-h-8 md:h-12 md:w-12">❯</a>
                         <!-- ackground: black; border-color: black; color: #dadada; font-size: 1.2rem; } -->
                     </div>
                 </div>
@@ -251,54 +287,410 @@
                     <!--width: 90%;     padding: 20px 18px; gap: 18px; top: -70px;  left: 5%; -->
                     <!-- <div class="grid grid-cols-[0.9fr] justify-center"> -->
                     <div>
-                        <img src="images/fruit1.png" alt="Grape">
+                        <img src="images/fruit1.png" alt="Grape" />
                         <p>Grape</p>
                     </div>
                     <!-- <div class="grid grid-cols-[0.9fr] justify-center"> -->
                     <div>
-                        <img src="images/fruit2.png" alt="Orange">
+                        <img src="images/fruit2.png" alt="Orange" />
                         <p>Orange</p>
                     </div>
                     <!-- <div class="grid grid-cols-[0.9fr] justify-center"> -->
                     <div>
-                        <img src="images/fruit3.png" alt="Mango">
+                        <img src="images/fruit3.png" alt="Mango" />
                         <p>Mango</p>
                     </div>
                     <!-- <div class="grid grid-cols-[0.9fr] justify-center"> -->
                     <div>
-                        <img src="images/fruit4.png" alt="Strawberry">
+                        <img src="images/fruit4.png" alt="Strawberry" />
                         <p>Strawberry</p>
                     </div>
                     <!-- <div class="grid grid-cols-[0.9fr] justify-center"> -->
                     <div>
-                        <img src="images/fruit5.png" alt="Pomegranate">
+                        <img src="images/fruit5.png" alt="Pomegranate" />
                         <p>Pomegranate</p>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-    <main>
-        <section class="mx-4 my-4 md:mx-8 border-0 border-orange-300">
-            <div class="w-full md:max-w-screen-xl md:mx-auto my-8 md:my-12"> hi </div>
-            <!-- <div class="test">Kemon acho, bvalo acho eta thik moto dekha jay? </div> -->
-            <!-- 
-
-Flavors of Nature <br> Right to You
-Tropical Bliss <br> Freshly Delivered
-Exotic Fruits <br> Delivered Fast
-Taste Paradise <br> Home Delivered
-
-
-Top-Notch Organic Products Supplied Here
-Premium Quality Organic Items Available
-Providing High-Quality Organic Goods
-Explore Our Selection of Organic Excellence
- -->
+    <main class="">
+        <section class="mx-4 md:mx-8 border-0 mt-32 lg:mt-48 border-orange-300">
+            <div class="w-full md:max-w-screen-xl md:mx-auto my-8 md:my-12]">
+                <!-- Top Part : Heading, CountDown -->
+                <div class="flex justify-between flex-col lg:flex-row items-center text-center gap-6 lg:gap-0">
+                    <div class="text-content max-w-[500px]">
+                        <h1 class="mb-3 lg:mb-5 text-2xl md:text-4xl lg:text-5xl font-bold text-[#121212]"> Deal of the
+                            day </h1>
+                        <p class="mb-3 lg:mb-5 text-[#12121299] font-medium text-base"> Discover sweet deals daily!
+                            Fresh, juicy fruits at unbeatable prices. Limited time offers. Indulge in nature's goodness.
+                            Shop now and save! </p>
+                    </div>
+                    <!-- CountDown -->
+                    <div class="flex gap-6 items-center text-center">
+                        <div>
+                            <div class="text-[#121212] text-2xl md:text-4xl lg:text-5xl font-bold"> 29 </div>
+                            <div class="text-[#12121299] font-medium text-sm pt-2"> Days </div>
+                        </div>
+                        <div>
+                            <div class="text-[#121212] text-2xl font-bold"> : </div>
+                            <div class="invisible">:</div>
+                        </div>
+                        <div>
+                            <div class="text-[#121212] text-2xl md:text-4xl lg:text-5xl font-bold"> 15 </div>
+                            <div class="text-[#12121299] font-medium text-sm pt-2"> Hours </div>
+                        </div>
+                        <div>
+                            <div class="text-[#121212] text-2xl font-bold"> : </div>
+                            <div class="invisible">:</div>
+                        </div>
+                        <div>
+                            <div class="text-[#121212] text-2xl md:text-4xl lg:text-5xl font-bold"> 25 </div>
+                            <div class="text-[#12121299] font-medium text-sm pt-2"> Minutes </div>
+                        </div>
+                        <div>
+                            <div class="text-[#121212] text-2xl font-bold"> : </div>
+                            <div class="invisible">:</div>
+                        </div>
+                        <div>
+                            <div class="text-[#121212] text-2xl md:text-4xl lg:text-5xl font-bold"> 08 </div>
+                            <div class="text-[#12121299] font-medium text-sm pt-2"> Seconds </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Middle part : Fruit pic, price, ratings and Details -->
+                <div class="my-9 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-5">
+                    <!-- Card 01 -->
+                    <div class="card p-9 rounded-lg bg-base-100 border-2 border-[#121212">
+                        <div>
+                            <figure class="px-10 pt-10">
+                                <img src="images/fruit6.png" alt="fruit" class="rounded-xl" />
+                            </figure>
+                            <h2
+                                class="card-title text-[#121212 block text-center my-5 pb-5 border-b-[1px] border-[#1212121A]">
+                                12.90$ - 18.85$ </h2>
+                        </div>
+                        <div class="card-body p-0 items-center text-center">
+                            <p class="text-[#12121299] font-medium text-base"> Apples </p>
+                            <div class="rating rating-lg rating-half my-5">
+                                <input type="radio" name="rating-01" class="rating-hidden" />
+                                <input type="radio" name="rating-01"
+                                    class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-01"
+                                    class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-01"
+                                    class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-01"
+                                    class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-01"
+                                    class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-01" class="bg-[#F85559] mask mask-star-2 mask-half-2"
+                                    checked />
+                                <input type="radio" name="rating-01"
+                                    class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-01"
+                                    class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-01"
+                                    class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-01"
+                                    class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                            </div>
+                            <label for="my_modal_1" class="font-bold text-[#F85559] cursor-pointer">Details</label>
+                        </div>
+                    </div>
+                    <!-- Card 02 -->
+                    <div class="card p-9 rounded-lg bg-base-100 border-2 border-[#121212">
+                        <div>
+                            <figure class="px-10 pt-10">
+                                <img src="images/fruit7.png" alt="fruit" class="rounded-xl" />
+                            </figure>
+                            <h2
+                                class="card-title text-[#121212 block text-center my-5 pb-5 border-b-[1px] border-[#1212121A]">
+                                14.40$ - 15.77$ </h2>
+                        </div>
+                        <div class="card-body p-0 items-center text-center">
+                            <p class="text-[#12121299] font-medium text-base"> Orange </p>
+                            <div class="rating rating-lg rating-half my-5">
+                                <input type="radio" name="rating-03" class="rating-hidden" />
+                                <input type="radio" name="rating-03"
+                                    class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-03"
+                                    class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-03"
+                                    class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-03"
+                                    class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-03"
+                                    class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-03"
+                                    class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-03" class="bg-[#F85559] mask mask-star-2 mask-half-1"
+                                    checked />
+                                <input type="radio" name="rating-03"
+                                    class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-03"
+                                    class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-03"
+                                    class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                            </div>
+                            <label for="my_modal_2" class="font-bold text-[#F85559] cursor-pointer">Details</label>
+                        </div>
+                    </div>
+                    <!-- Card 03 -->
+                    <div class="card p-9 rounded-lg bg-base-100 border-2 border-[#121212">
+                        <div>
+                            <figure class="px-10 pt-10">
+                                <img src="images/fruit8.png" alt="fruit" class="rounded-xl" />
+                            </figure>
+                            <h2
+                                class="card-title text-[#121212 block text-center my-5 pb-5 border-b-[1px] border-[#1212121A]">
+                                16.35$ - 19.05$ </h2>
+                        </div>
+                        <div class="card-body p-0 items-center text-center">
+                            <p class="text-[#12121299] font-medium text-base"> Red Dragon </p>
+                            <div class="rating rating-lg rating-half my-5">
+                                <input type="radio" name="rating-05" class="rating-hidden" />
+                                <input type="radio" name="rating-05"
+                                    class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-05"
+                                    class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-05"
+                                    class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-05" class="bg-[#F85559] mask mask-star-2 mask-half-2"
+                                    checked />
+                                <input type="radio" name="rating-05"
+                                    class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-05"
+                                    class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-05"
+                                    class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-05"
+                                    class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-05"
+                                    class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-05"
+                                    class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                            </div>
+                            <label for="my_modal_3" class="font-bold text-[#F85559] cursor-pointer">Details</label>
+                        </div>
+                    </div>
+                    <!-- Card 04 -->
+                    <div class="card p-9 rounded-lg bg-base-100 border-2 border-[#121212">
+                        <div>
+                            <figure class="px-10 pt-10">
+                                <img src="images/fruit9.png" alt="fruit" class="rounded-xl" />
+                            </figure>
+                            <h2
+                                class="card-title text-[#121212 block text-center my-5 pb-5 border-b-[1px] border-[#1212121A]">
+                                12.90$ - 18.85$ </h2>
+                        </div>
+                        <div class="card-body p-0 items-center text-center">
+                            <p class="text-[#12121299] font-medium text-base"> Banana </p>
+                            <div class="rating rating-lg rating-half my-5">
+                                <input type="radio" name="rating-07" class="rating-hidden" />
+                                <input type="radio" name="rating-07"
+                                    class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-07"
+                                    class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-07"
+                                    class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-07"
+                                    class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-07"
+                                    class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-07"
+                                    class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-07"
+                                    class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-07"
+                                    class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-07" class="bg-[#F85559] mask mask-star-2 mask-half-1"
+                                    checked />
+                                <input type="radio" name="rating-07"
+                                    class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                            </div>
+                            <label for="my_modal_4" class="font-bold text-[#F85559] cursor-pointer">Details</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- Button : Shop All -->
+                <div class="text-center">
+                    <button
+                        class="btn btn-primary text-white bg-[#F85559] border-[#F85559] hover:text-[#F85559] hover:bg-white hover:border-[#F85559] font-bold px-5">
+                        Shop All </button>
+                </div>
+            </div>
         </section>
     </main>
-    <footer>
-    </footer>
+    <footer></footer>
+    <!-- Modal 01 -->
+    <input type="checkbox" id="my_modal_1" class="modal-toggle" />
+    <div class="modal">
+        <div class="modal-box">
+            <!--  -->
+            <div class="card p-9 bg-base-100">
+                <div>
+                    <figure class="mb-4">
+                        <img src="images/fruit6.png" alt="fruit" class="rounded-xl" />
+                    </figure>
+                    <h2 class="card-title text-[#121212] block text-center mb-4"> Apples </h2>
+                </div>
+                <div class="card-body p-0 items-center text-center">
+                    <p class="text-[#12121299] font-medium text-base mb-4"> Enjoy the natural sweetness and crisp
+                        texture of our premium fruits. </p>
+                    <div class="rating rating-lg rating-half mb-4">
+                        <input type="radio" name="rating-02" class="rating-hidden" />
+                        <input type="radio" name="rating-02" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-02" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-02" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-02" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-02" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-02" class="bg-[#F85559] mask mask-star-2 mask-half-2"
+                            checked />
+                        <input type="radio" name="rating-02" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-02" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-02" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-02" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="modal-action mt-0 justify-center">
+                <label for="my_modal_1"
+                    class="btn hover:text-white hover:bg-[#F85559] hover:border-[#F85559] text-[#F85559] bg-white border-[#F85559]">Close!</label>
+                <button
+                    class="btn btn-primary text-white bg-[#F85559] border-[#F85559] hover:text-[#F85559] hover:bg-white hover:border-[#F85559] font-bold px-5">
+                    Shop All </button>
+            </div>
+        </div>
+        <label class="modal-backdrop" for="my_modal_1">Close</label>
+    </div>
+    <!-- Modal 02 -->
+    <input type="checkbox" id="my_modal_2" class="modal-toggle" />
+    <div class="modal">
+        <div class="modal-box">
+            <!--  -->
+            <div class="card p-9 bg-base-100">
+                <div>
+                    <figure class="mb-4">
+                        <img src="images/fruit7.png" alt="fruit" class="rounded-xl" />
+                    </figure>
+                    <h2 class="card-title text-[#121212] block text-center mb-4"> Orange </h2>
+                </div>
+                <div class="card-body p-0 items-center text-center">
+                    <p class="text-[#12121299] font-medium text-base mb-4">Tangy, refreshing oranges for sale. Bursting
+                        with Vitamin C. Get your dose of sunshine!</p>
+                    <div class="rating rating-lg rating-half mb-4">
+                        <input type="radio" name="rating-04" class="rating-hidden" />
+                        <input type="radio" name="rating-04" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-04" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-04" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-04" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-04" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-04" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-04" class="bg-[#F85559] mask mask-star-2 mask-half-1"
+                            checked />
+                        <input type="radio" name="rating-04" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-04" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-04" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="modal-action mt-0 justify-center">
+                <label for="my_modal_2"
+                    class="btn hover:text-white hover:bg-[#F85559] hover:border-[#F85559] text-[#F85559] bg-white border-[#F85559]">Close!</label>
+                <button
+                    class="btn btn-primary text-white bg-[#F85559] border-[#F85559] hover:text-[#F85559] hover:bg-white hover:border-[#F85559] font-bold px-5">
+                    Shop All </button>
+            </div>
+        </div>
+        <label class="modal-backdrop" for="my_modal_2">Close</label>
+    </div>
+    <!-- Modal 03 -->
+    <input type="checkbox" id="my_modal_3" class="modal-toggle" />
+    <div class="modal">
+        <div class="modal-box">
+            <!--  -->
+            <div class="card p-9 bg-base-100">
+                <div>
+                    <figure class="mb-4">
+                        <img src="images/fruit8.png" alt="fruit" class="rounded-xl" />
+                    </figure>
+                    <h2 class="card-title text-[#121212] block text-center mb-4"> Red Dragon </h2>
+                </div>
+                <div class="card-body p-0 items-center text-center">
+                    <p class="text-[#12121299] font-medium text-base mb-4">Exotic Red Dragon fruit for sale. Vibrant
+                        color and deliciously refreshing taste. Try it now!</p>
+                    <div class="rating rating-lg rating-half mb-4">
+                        <input type="radio" name="rating-06" class="rating-hidden" />
+                        <input type="radio" name="rating-06" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-06" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-06" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-06" class="bg-[#F85559] mask mask-star-2 mask-half-2"
+                            checked />
+                        <input type="radio" name="rating-06" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-06" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-06" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-06" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-06" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-06" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="modal-action mt-0 justify-center">
+                <label for="my_modal_3"
+                    class="btn hover:text-white hover:bg-[#F85559] hover:border-[#F85559] text-[#F85559] bg-white border-[#F85559]">Close!</label>
+                <button
+                    class="btn btn-primary text-white bg-[#F85559] border-[#F85559] hover:text-[#F85559] hover:bg-white hover:border-[#F85559] font-bold px-5">
+                    Shop All </button>
+            </div>
+        </div>
+        <label class="modal-backdrop" for="my_modal_3">Close</label>
+    </div>
+    <!-- Modal 04 -->
+    <input type="checkbox" id="my_modal_4" class="modal-toggle" />
+    <div class="modal">
+        <div class="modal-box">
+            <!--  -->
+            <div class="card p-9 bg-base-100">
+                <div>
+                    <figure class="mb-4">
+                        <img src="images/fruit9.png" alt="fruit" class="rounded-xl" />
+                    </figure>
+                    <h2 class="card-title text-[#121212] block text-center mb-4"> Banana </h2>
+                </div>
+                <div class="card-body p-0 items-center text-center">
+                    <p class="text-[#12121299] font-medium text-base mb-4">Ripe, golden bananas for sale. Naturally
+                        sweet and packed with nutrients. Grab yours today!</p>
+                    <div class="rating rating-lg rating-half mb-4">
+                        <input type="radio" name="rating-08" class="rating-hidden" />
+                        <input type="radio" name="rating-08" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-08" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-08" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-08" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-08" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-08" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-08" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-08" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-08" class="bg-[#F85559] mask mask-star-2 mask-half-1"
+                            checked />
+                        <input type="radio" name="rating-08" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="modal-action mt-0 justify-center">
+                <label for="my_modal_4"
+                    class="btn hover:text-white hover:bg-[#F85559] hover:border-[#F85559] text-[#F85559] bg-white border-[#F85559]">Close!</label>
+                <button
+                    class="btn btn-primary text-white bg-[#F85559] border-[#F85559] hover:text-[#F85559] hover:bg-white hover:border-[#F85559] font-bold px-5">
+                    Shop All </button>
+            </div>
+        </div>
+        <label class="modal-backdrop" for="my_modal_4">Close</label>
+    </div>
 </body>
 
 </html>
