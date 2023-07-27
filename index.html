@@ -52,11 +52,6 @@
             background-size: cover;
             background-blend-mode: overlay;
         }
-
-        .hidden_image {
-            /* width: 100%; */
-            /* height: auto; */
-        }
     </style>
 </head>
 
@@ -76,7 +71,7 @@
                             </svg>
                         </label>
                         <ul tabindex="0"
-                            class="menu menu-sm dropdown-content z-30 p-2 shadow-md border-[1px] border-[#423e3e1a] bg-base-100 rounded-box w-56 text-lg text-[#121212] absolute top-12 -left-[210px]">
+                            class="menu menu-sm dropdown-content z-50 p-2 shadow-md border-[1px] border-[#423e3e1a] bg-base-100 rounded-box w-56 text-lg text-[#121212] absolute top-12 -left-[210px]">
                             <li><a href="#">Home</a></li>
                             <li><a href="#">About Us</a></li>
                             <li><a href="#">Shop</a></li>
@@ -126,7 +121,6 @@
         </nav>
         <div class="banner w-full md:max-w-screen-xl md:mx-auto my-8 md:my-12">
             <div class="carousel w-full">
-                <!-- <div class="rounded-lg bg-gradient-to-b from-[#000000bd] to-[#00000000] bg-banner1 bg-cover bg-blend-overlay bg-no-repeat"></div> -->
                 <!-- First Slide -->
                 <div id="slide1" class="carousel-item relative w-full">
                     <!-- <div></div> -->
@@ -315,8 +309,9 @@
         </div>
     </header>
     <main class="">
-        <section class="mx-4 md:mx-8 border-0 mt-32 lg:mt-48 border-orange-300">
-            <div class="w-full md:max-w-screen-xl md:mx-auto my-8 md:my-12]">
+        <!-- Deal of The Day -->
+        <section class="mx-4 md:mx-8 border-0 mt-12 md:mt-32 lg:mt-48 border-orange-300">
+            <div class="w-full md:max-w-screen-xl md:mx-auto">
                 <!-- Top Part : Heading, CountDown -->
                 <div class="flex justify-between flex-col lg:flex-row items-center text-center gap-6 lg:gap-0">
                     <div class="text-content max-w-[500px]">
@@ -327,7 +322,7 @@
                             Shop now and save! </p>
                     </div>
                     <!-- CountDown -->
-                    <div class="flex gap-6 items-center text-center">
+                    <div class="flex gap-2 md:gap-6 items-center text-center">
                         <div>
                             <div class="text-[#121212] text-2xl md:text-4xl lg:text-5xl font-bold"> 29 </div>
                             <div class="text-[#12121299] font-medium text-sm pt-2"> Days </div>
@@ -519,6 +514,78 @@
                         class="btn btn-primary text-white bg-[#F85559] border-[#F85559] hover:text-[#F85559] hover:bg-white hover:border-[#F85559] font-bold px-5">
                         Shop All </button>
                 </div>
+            </div>
+        </section>
+        <!-- Meet the team section -->
+        <section class="mx-4 md:mx-8 my-24 border-0 border-orange-300">
+            <div class="w-full md:max-w-screen-xl md:mx-auto">
+                <!--  -->
+                <div class="rounded-lg bg-cover bg-blend-overlay bg-no-repeat p-5 md:p-24 flex flex-col justify-center bg-center"
+                    style="background-image: url('images/banner1.png'), linear-gradient(to bottom, #000000bd 0%,  #000000bd 100%);">
+                    <!-- Text Contents -->
+                    <div class="max-w-[700px] text-[#FFFFFF] text-center self-center">
+                        <h1 class="mb-3 lg:mb-5 text-2xl md:text-4xl lg:text-5xl font-bold ">Meet the team</h1>
+                        <p class="mb-3 lg:mb-5 font-medium text-base">Meet our talented team of fruit enthusiasts who
+                            are passionate about bringing you the freshest and finest fruits. Together, we're dedicated
+                            to delivering a delightful fruit experience to your table. </p>
+                    </div>
+                    <!-- Team Member Section -->
+                    <div class="text-white mt-9 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-0">
+                        <div class="grid justify-items-center">
+                            <img class="" src="images/member1.png" alt="">
+                            <h3 class="text-lg font-bold mt-6">Mehedi Hasan</h3>
+                            <p class="text-sm">Fruits Expert</p>
+                            <div class="social mt-2">
+                                <i
+                                    class="fa-brands fa-facebook-f bg-[#F85559] hover:text-[#F85559] hover:bg-white rounded-full inline-flex justify-center items-center h-4 w-4 p-4 cursor-pointer"></i>
+                                <i
+                                    class="fa-brands fa-twitter bg-[#F85559] hover:text-[#F85559] hover:bg-white rounded-full inline-flex justify-center items-center h-4 w-4 p-4 cursor-pointer"></i>
+                                <i
+                                    class="fa-brands fa-linkedin-in bg-[#F85559] hover:text-[#F85559] hover:bg-white rounded-full inline-flex justify-center items-center h-4 w-4 p-4 cursor-pointer"></i>
+                            </div>
+                        </div>
+                        <div class="grid justify-items-center">
+                            <img class="" src="images/member2.png" alt="">
+                            <h3 class="text-lg font-bold mt-6">Faruk Hasan</h3>
+                            <p class="text-sm">Quality Control Manager</p>
+                            <div class="social mt-2">
+                                <i
+                                    class="fa-brands fa-facebook-f bg-[#F85559] hover:text-[#F85559] hover:bg-white rounded-full inline-flex justify-center items-center h-4 w-4 p-4 cursor-pointer"></i>
+                                <i
+                                    class="fa-brands fa-twitter bg-[#F85559] hover:text-[#F85559] hover:bg-white rounded-full inline-flex justify-center items-center h-4 w-4 p-4 cursor-pointer"></i>
+                                <i
+                                    class="fa-brands fa-linkedin-in bg-[#F85559] hover:text-[#F85559] hover:bg-white rounded-full inline-flex justify-center items-center h-4 w-4 p-4 cursor-pointer"></i>
+                            </div>
+                        </div>
+                        <div class="grid justify-items-center">
+                            <img class="" src="images/member3.png" alt="">
+                            <h3 class="text-lg font-bold mt-6">Asif Ahmed</h3>
+                            <p class="text-sm">Agricultural Researcher</p>
+                            <div class="social mt-2">
+                                <i
+                                    class="fa-brands fa-facebook-f bg-[#F85559] hover:text-[#F85559] hover:bg-white rounded-full inline-flex justify-center items-center h-4 w-4 p-4 cursor-pointer"></i>
+                                <i
+                                    class="fa-brands fa-twitter bg-[#F85559] hover:text-[#F85559] hover:bg-white rounded-full inline-flex justify-center items-center h-4 w-4 p-4 cursor-pointer"></i>
+                                <i
+                                    class="fa-brands fa-linkedin-in bg-[#F85559] hover:text-[#F85559] hover:bg-white rounded-full inline-flex justify-center items-center h-4 w-4 p-4 cursor-pointer"></i>
+                            </div>
+                        </div>
+                        <div class="grid justify-items-center">
+                            <img class="" src="images/member4.png" alt="">
+                            <h3 class="text-lg font-bold mt-6">Sadat Sakib</h3>
+                            <p class="text-sm">Sales Executive</p>
+                            <div class="social mt-2">
+                                <i
+                                    class="fa-brands fa-facebook-f bg-[#F85559] hover:text-[#F85559] hover:bg-white rounded-full inline-flex justify-center items-center h-4 w-4 p-4 cursor-pointer"></i>
+                                <i
+                                    class="fa-brands fa-twitter bg-[#F85559] hover:text-[#F85559] hover:bg-white rounded-full inline-flex justify-center items-center h-4 w-4 p-4 cursor-pointer"></i>
+                                <i
+                                    class="fa-brands fa-linkedin-in bg-[#F85559] hover:text-[#F85559] hover:bg-white rounded-full inline-flex justify-center items-center h-4 w-4 p-4 cursor-pointer"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
             </div>
         </section>
     </main>
