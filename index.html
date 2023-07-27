@@ -29,7 +29,7 @@
     <header class="mx-4 md:mx-8 border-0 border-orange-300">
         <nav class="w-full md:max-w-screen-xl md:mx-auto my-8 md:my-12">
             <div
-                class="navbar md:bg-[#F85559] rounded-full px-0 md:px-5 lg:px-6 flex-row-reverse lg:flex-row justify-between">
+                class="navbar md:bg-[#F85559] rounded-full px-0 md:px-8 lg:px-6 flex-row-reverse lg:flex-row justify-between">
                 <!-- Navbar part 01 -->
                 <div class="navbar-start text-[#121212] md:text-white justify-end lg:justify-start">
                     <div class="md:hidden dropdown">
@@ -61,20 +61,32 @@
                         </ul>
                     </div>
                     <!-- Ul For Large -->
-                    <ul tabindex="0" class="hidden md:flex space-x-6 text-lg border-white">
-                        <li>
-                            <a class="hover:border-b-[1px]" href="#">Home</a>
-                        </li>
-                        <li>
-                            <a class="hover:border-b-[1px]" href="#">About Us</a>
-                        </li>
-                        <li>
-                            <a class="hover:border-b-[1px]" href="#">Shop</a>
-                        </li>
-                        <li>
-                            <a class="hover:border-b-[1px]" href="#">All Fruits</a>
-                        </li>
-                    </ul>
+                    <div>
+                        <ul tabindex="0" class="hidden md:flex space-x-6 text-lg border-white">
+                            <li>
+                                <a class="hover:border-b-[1px]" href="#">Home</a>
+                            </li>
+                            <li>
+                                <a class="hover:border-b-[1px]" href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a class="hover:border-b-[1px]" href="#">Shop</a>
+                            </li>
+                            <li>
+                                <a class="hover:border-b-[1px]" href="#">All Fruits</a>
+                            </li>
+                        </ul>
+                        <!-- search bar only for medium device -->
+                        <div class="px-0 mt-2 hidden md:flex md:justify-end lg:hidden text-[#121212]">
+                            <div class="relative">
+                                <input type="text" placeholder="Search here"
+                                    class="pl-4 pr-9 h-9 rounded-full outline-none" />
+                                <div id="searchIcon" class="absolute right-3 top-[6px]">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!-- Navbar part 02 / Middle Part -->
                 <div class="navbar-center text-[#121212] md:text-white">
