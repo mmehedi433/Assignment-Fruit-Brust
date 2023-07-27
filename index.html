@@ -17,40 +17,9 @@
         rel="stylesheet" />
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/c131920645.js" crossorigin="anonymous"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    backgroundImage: {
-                        banner1: "url('images/banner1.png')",
-                        banner2: "url('images/banner2.png')",
-                        banner3: "url('images/banner3.png')",
-                        banner4: "url('images/banner4.png')",
-                        banner00:
-                            "linear-gradient(to bottom, #000000bd 0%, #0000001c 100%, url('url(images/banner1.png)')",
-                    },
-                },
-            },
-        };
-    </script>
     <style>
         .openSans {
             font-family: "Open Sans", sans-serif;
-        }
-
-        .test {
-            border: 3px solid rgb(18, 181, 56);
-            height: 5px;
-            margin-top: 20px;
-        }
-
-        #hero-overlay-test_2 {
-            border-radius: 8px;
-            /* background: url(images/banner1.png), linear-gradient(to bottom, #000000bd 0%, #0000001c 100%); */
-            /* background: linear-gradient(to bottom, #000000bd 0%, rgba(0, 0, 0, 0) 100%); */
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-blend-mode: overlay;
         }
     </style>
 </head>
@@ -61,6 +30,7 @@
         <nav class="w-full md:max-w-screen-xl md:mx-auto my-8 md:my-12">
             <div
                 class="navbar md:bg-[#F85559] rounded-full px-0 md:px-5 lg:px-6 flex-row-reverse lg:flex-row justify-between">
+                <!-- Navbar part 01 -->
                 <div class="navbar-start text-[#121212] md:text-white justify-end lg:justify-start">
                     <div class="md:hidden dropdown">
                         <label tabindex="0" class="btn btn-ghost btn-circle w-auto md:w-12">
@@ -70,6 +40,7 @@
                                     d="M4 6h16M4 12h16M4 18h7" />
                             </svg>
                         </label>
+                        <!-- Ul For Small Device -->
                         <ul tabindex="0"
                             class="menu menu-sm dropdown-content z-50 p-2 shadow-md border-[1px] border-[#423e3e1a] bg-base-100 rounded-box w-56 text-lg text-[#121212] absolute top-12 -left-[210px]">
                             <li><a href="#">Home</a></li>
@@ -105,10 +76,12 @@
                         </li>
                     </ul>
                 </div>
+                <!-- Navbar part 02 / Middle Part -->
                 <div class="navbar-center text-[#121212] md:text-white">
                     <a href="#" class="btn btn-ghost normal-case text-3xl md:text-4xl font-bold px-0">
                         <img class="h-8 md:h-9" height="" src="images/logo.png" alt="" /> Fruit Burst </a>
                 </div>
+                <!-- Navbar part 03 -->
                 <div class="navbar-end px-0 hidden lg:flex text-[#121212]">
                     <div class="relative">
                         <input type="text" placeholder="Search here" class="pl-4 pr-9 h-9 rounded-full outline-none" />
@@ -123,7 +96,6 @@
             <div class="carousel w-full">
                 <!-- First Slide -->
                 <div id="slide1" class="carousel-item relative w-full">
-                    <!-- <div></div> -->
                     <div class="hero place-items-baseline justify-items-center items-start rounded-lg bg-cover bg-blend-overlay bg-no-repeat"
                         style="
                                 background-image: url('images/banner1.png'),
@@ -133,7 +105,6 @@
                                         rgba(0, 0, 0, 0) 100%
                                     );
                             ">
-                        <!-- <div class="hero-overlay bg-opacity-60"></div> -->
                         <div class="hero-content text-center text-neutral-content z-20 pt-6 lg:pt-14">
                             <div class="mx-4 max-w-md">
                                 <h1 class="mb-3 lg:mb-5 text-2xl md:text-4xl lg:text-5xl font-bold text-white"> Flavors
@@ -156,12 +127,10 @@
                             class="btn btn-circle bg-gray-900 hover:bg-gray-900 text-gray-100 border-gray-900 hover:border-gray-400 text-xl h-8 w-8 min-h-8 md:h-12 md:w-12">❮</a>
                         <a href="#slide2"
                             class="btn btn-circle bg-gray-900 hover:bg-gray-900 text-gray-100 border-gray-900 hover:border-gray-400 text-xl h-8 w-8 min-h-8 md:h-12 md:w-12">❯</a>
-                        <!-- ackground: black; border-color: black; color: #dadada; font-size: 1.2rem; } -->
                     </div>
                 </div>
                 <!-- Second Slide -->
                 <div id="slide2" class="carousel-item relative w-full">
-                    <!-- <div></div> -->
                     <div class="hero place-items-baseline justify-items-center items-start rounded-lg bg-cover bg-blend-overlay bg-no-repeat"
                         style="
                                 background-image: url('images/banner2.png'),
@@ -171,7 +140,6 @@
                                         rgba(0, 0, 0, 0) 100%
                                     );
                             ">
-                        <!-- <div class="hero-overlay bg-opacity-60"></div> -->
                         <div class="hero-content text-center text-neutral-content z-20 pt-6 lg:pt-14">
                             <div class="mx-4 max-w-md">
                                 <h1 class="mb-3 lg:mb-5 text-2xl md:text-4xl lg:text-5xl font-bold text-white"> Tropical
@@ -183,7 +151,6 @@
                                     Shop Now </button>
                             </div>
                         </div>
-                        <!-- Hidden image, used to keep perfect height-width of background image -->
                         <div class="hidden_image invisible opacity-0 z-10">
                             <img src="images/banner_transparent.png" class="w-full" />
                         </div>
@@ -194,12 +161,10 @@
                             class="btn btn-circle bg-gray-900 hover:bg-gray-900 text-gray-100 border-gray-900 hover:border-gray-400 text-xl h-8 w-8 min-h-8 md:h-12 md:w-12">❮</a>
                         <a href="#slide3"
                             class="btn btn-circle bg-gray-900 hover:bg-gray-900 text-gray-100 border-gray-900 hover:border-gray-400 text-xl h-8 w-8 min-h-8 md:h-12 md:w-12">❯</a>
-                        <!-- ackground: black; border-color: black; color: #dadada; font-size: 1.2rem; } -->
                     </div>
                 </div>
                 <!-- Third Slide -->
                 <div id="slide3" class="carousel-item relative w-full">
-                    <!-- <div></div> -->
                     <div class="hero place-items-baseline justify-items-center items-start rounded-lg bg-cover bg-blend-overlay bg-no-repeat"
                         style="
                                 background-image: url('images/banner3.png'),
@@ -209,7 +174,6 @@
                                         rgba(0, 0, 0, 0) 100%
                                     );
                             ">
-                        <!-- <div class="hero-overlay bg-opacity-60"></div> -->
                         <div class="hero-content text-center text-neutral-content z-20 pt-6 lg:pt-14">
                             <div class="mx-4 max-w-md">
                                 <h1 class="mb-3 lg:mb-5 text-2xl md:text-4xl lg:text-5xl font-bold text-white"> Exotic
@@ -221,7 +185,6 @@
                                     Shop Now </button>
                             </div>
                         </div>
-                        <!-- Hidden image, used to keep perfect height-width of background image -->
                         <div class="hidden_image invisible opacity-0 z-10">
                             <img src="images/banner_transparent.png" class="w-full" />
                         </div>
@@ -232,12 +195,10 @@
                             class="btn btn-circle bg-gray-900 hover:bg-gray-900 text-gray-100 border-gray-900 hover:border-gray-400 text-xl h-8 w-8 min-h-8 md:h-12 md:w-12">❮</a>
                         <a href="#slide4"
                             class="btn btn-circle bg-gray-900 hover:bg-gray-900 text-gray-100 border-gray-900 hover:border-gray-400 text-xl h-8 w-8 min-h-8 md:h-12 md:w-12">❯</a>
-                        <!-- ackground: black; border-color: black; color: #dadada; font-size: 1.2rem; } -->
                     </div>
                 </div>
                 <!-- Fourth Slide -->
                 <div id="slide4" class="carousel-item relative w-full">
-                    <!-- <div></div> -->
                     <div class="hero place-items-baseline justify-items-center items-start rounded-lg bg-cover bg-blend-overlay bg-no-repeat"
                         style="
                                 background-image: url('images/banner4.png'),
@@ -247,7 +208,6 @@
                                         rgba(0, 0, 0, 0) 100%
                                     );
                             ">
-                        <!-- <div class="hero-overlay bg-opacity-60"></div> -->
                         <div class="hero-content text-center text-neutral-content z-20 pt-6 lg:pt-14">
                             <div class="mx-4 max-w-md">
                                 <h1 class="mb-3 lg:mb-5 text-2xl md:text-4xl lg:text-5xl font-bold text-white"> Taste
@@ -259,7 +219,6 @@
                                     Shop Now </button>
                             </div>
                         </div>
-                        <!-- Hidden image, used to keep perfect height-width of background image -->
                         <div class="hidden_image invisible opacity-0 z-10">
                             <img src="images/banner_transparent.png" class="w-full" />
                         </div>
@@ -270,7 +229,6 @@
                             class="btn btn-circle bg-gray-900 hover:bg-gray-900 text-gray-100 border-gray-900 hover:border-gray-400 text-xl h-8 w-8 min-h-8 md:h-12 md:w-12">❮</a>
                         <a href="#slide1"
                             class="btn btn-circle bg-gray-900 hover:bg-gray-900 text-gray-100 border-gray-900 hover:border-gray-400 text-xl h-8 w-8 min-h-8 md:h-12 md:w-12">❯</a>
-                        <!-- ackground: black; border-color: black; color: #dadada; font-size: 1.2rem; } -->
                     </div>
                 </div>
             </div>
@@ -278,28 +236,22 @@
             <div class="relative hidden md:block">
                 <div
                     class="flex w-[90%] lg:w-4/5 mx-auto justify-center gap-4 lg:gap-10 px-4 py-5 lg:px-12 lg:py-7 text-center font-medium text-[#121212cc] absolute left-[5%] lg:left-[10%] -top-[70px] lg:-top-[100px] bg-white shadow-md rounded-lg items-end">
-                    <!--width: 90%;     padding: 20px 18px; gap: 18px; top: -70px;  left: 5%; -->
-                    <!-- <div class="grid grid-cols-[0.9fr] justify-center"> -->
                     <div>
                         <img src="images/fruit1.png" alt="Grape" />
                         <p>Grape</p>
                     </div>
-                    <!-- <div class="grid grid-cols-[0.9fr] justify-center"> -->
                     <div>
                         <img src="images/fruit2.png" alt="Orange" />
                         <p>Orange</p>
                     </div>
-                    <!-- <div class="grid grid-cols-[0.9fr] justify-center"> -->
                     <div>
                         <img src="images/fruit3.png" alt="Mango" />
                         <p>Mango</p>
                     </div>
-                    <!-- <div class="grid grid-cols-[0.9fr] justify-center"> -->
                     <div>
                         <img src="images/fruit4.png" alt="Strawberry" />
                         <p>Strawberry</p>
                     </div>
-                    <!-- <div class="grid grid-cols-[0.9fr] justify-center"> -->
                     <div>
                         <img src="images/fruit5.png" alt="Pomegranate" />
                         <p>Pomegranate</p>
@@ -308,7 +260,7 @@
             </div>
         </div>
     </header>
-    <main class="">
+    <main>
         <!-- Deal of The Day -->
         <section class="mx-4 md:mx-8 border-0 mt-12 md:mt-32 lg:mt-48 border-orange-300">
             <div class="w-full md:max-w-screen-xl md:mx-auto">
@@ -585,7 +537,6 @@
                         </div>
                     </div>
                 </div>
-                <!--  -->
             </div>
         </section>
         <!-- Why Choose Us -->
@@ -719,6 +670,7 @@
             </div>
         </footer>
     </footer>
+    <!-- Modals -->
     <!-- Modal 01 -->
     <input type="checkbox" id="my_modal_1" class="modal-toggle" />
     <div class="modal">
